@@ -1,6 +1,7 @@
 use cosmwasm_std::{Addr, DepsMut, MessageInfo, Response};
 use schemars::JsonSchema;
 use serde::{Deserialize, Serialize};
+use cosmwasm_schema::{cw_serde, QueryResponses};
 
 use crate::{errors::RbacError, Role};
 
